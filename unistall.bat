@@ -1,0 +1,4 @@
+@echo off
+powershell.exe $list = @('Microsoft.HEIFImageExtension_1.0.63001.0_x64__8wekyb3d8bbwe','Microsoft.HEVCVideoExtensions_2.1.45.0_x64__8wekyb3d8bbwe','Microsoft.AV1VideoExtension_1.1.62361.0_x64__8wekyb3d8bbwe','Microsoft.MPEG2VideoExtension_1.0.61931.0_x64__8wekyb3d8bbwe','Microsoft.RawImageExtension_2.2.172.0_x64__8wekyb3d8bbwe','Microsoft.VCLibs.140.00_14.0.33321.0_x64__8wekyb3d8bbwe','Microsoft.WebpImageExtension_1.1.171.0_x64__8wekyb3d8bbwe','Microsoft.VP9VideoExtensions_1.1.41.0_x64__8wekyb3d8bbwe');echo $list;foreach($f in $list){Remove-AppxPackage -Package $path$f}
+echo Done!
+pause
